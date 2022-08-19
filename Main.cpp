@@ -270,11 +270,12 @@ int wmain(int argc, wchar_t* argv[], wchar_t* envp[]) {	// ---------- MAIN PROGR
 	MoveMouse(100, 130);
 	ClickMouse();
 	Sleep(waitTime / 5);
-	MoveMouse(100, 390);
-	MultiClick(7);
+	SendKeyMultiple(VK_DOWN, 19);
 	Sleep(waitTime / 10);
-	MoveMouse(70, 315);
-	ClickMouse();
+	SendKeyMultiple(VK_UP, 3);
+	Sleep(waitTime / 10);
+	SendKey(VK_RETURN);
+	Sleep(waitTime / 10);
 	MoveMouse(250, 150);
 	ClickMouse();
 	Sleep(waitTime / 5);
